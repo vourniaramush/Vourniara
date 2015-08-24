@@ -31,10 +31,15 @@ class Character(DefaultCharacter):
     def at_object_creation(self):
         "Called only when first created"
         
-        self.
+        self.db.size = 0
+        self.db.speed = 0
+        self.db.initiative_mod = 0
+        self.db.defense = 0
+        self.db.armor = 0
 
-        self.db.level = 1
-        self.db.hp = 10
+        self.db.level = 0
+        self.db.health = 1
+        self.db.willpower = 0
         
         # Gaining spells/attributes/abilities after 
         # the creation of the character
@@ -73,7 +78,7 @@ class Character(DefaultCharacter):
          # Physical
          self.db.athletics = 0
          self.db.brawl = 0
-         self.db.drive = 0 # broomstick flying
+         self.db.flying = 0 # replacing the drive skill
          self.db.firearms = 0 # crossbows and other ranged weapons
          self.db.dueling = 0 # wizarding dueling
          self.db.larceny = 0
