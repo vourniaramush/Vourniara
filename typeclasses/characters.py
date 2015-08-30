@@ -31,15 +31,14 @@ class Character(DefaultCharacter):
     def at_object_creation(self):
         "Called only when first created"
         
-        self.db.size = 0
-        self.db.speed = 0
-        self.db.initiative_mod = 0
-        self.db.defense = 0
-        self.db.armor = 0
+        self.db.name = ''
+        self.db.birthday = ''
+        self.db.age = ''
+        self.db.sex = ''
+        
+        self.db.order = ''
+        self.db.path = ''
 
-        self.db.level = 0
-        self.db.health = 1
-        self.db.willpower = 0
         
         # Gaining spells/attributes/abilities after 
         # the creation of the character
@@ -95,3 +94,13 @@ class Character(DefaultCharacter):
          self.db.socialize = 0
          self.db.streetwise = 0
          self.db.subterfuge = 0
+
+        #Combat related
+        self.db.size = 0
+        self.db.speed = 0
+        self.db.initiative_mod = 0
+        self.db.defense = 0
+        self.db.armor = 0
+
+        self.db.health = 1
+        self.db.willpower = 0
