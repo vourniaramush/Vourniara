@@ -38,8 +38,6 @@ class Character(DefaultCharacter):
         
         self.db.order = ''
         self.db.path = ''
-
-        #testing
         
         # Gaining spells/attributes/abilities after 
         # the creation of the character
