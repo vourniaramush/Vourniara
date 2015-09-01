@@ -76,7 +76,8 @@ class Character(DefaultCharacter):
          # Physical
          self.db.athletics = 0
          self.db.brawl = 0
-         self.db.flying = 0 # replacing the drive skill
+         self.db.driving = 0
+         self.db.flying = 0 # for booms and quidditch
          self.db.firearms = 0 # crossbows and other ranged weapons
          self.db.dueling = 0 # wizarding dueling
          self.db.larceny = 0
@@ -103,3 +104,6 @@ class Character(DefaultCharacter):
 
         self.db.health = 1
         self.db.willpower = 0
+
+        self.db.merits = []
+        self.db.flaws = []
